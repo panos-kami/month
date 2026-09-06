@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#090909"
+  >
+
+  <title>One Month With You</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="locked">
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- FILM GRAIN -->
+  <div class="grain"></div>
+
+  <!-- START SCREEN -->
+  <section class="start-screen" id="startScreen">
+
+    <img
+      class="start-background"
+      src="IMG_2257.jpeg"
+      alt=""
+    >
+
+    <div class="start-overlay"></div>
+
+    <div class="start-content">
+      <p class="small-label">A little piece of us</p>
+
+      <h1>
+        One month.
+        <span>Only the beginning.</span>
+      </h1>
+
+      <p class="start-description">
+        Turn your sound on.<br>
+        This one is for you.
+      </p>
+
+      <button class="start-button" id="startButton">
+        <span>Enter our story</span>
+        <span class="button-arrow">↗</span>
+      </button>
+    </div>
+
+    <p class="start-date">01 MONTH • US</p>
+  </section>
+
+
+  <!-- BACKGROUND VIDEO -->
+  <div class="video-layer">
+    <video
+      id="backgroundVideo"
+      src="video.mp4"
+      playsinline
+      loop
+      preload="auto"
+    ></video>
+
+    <div class="video-darkener"></div>
+  </div>
+
+
+  <!-- SOUND BUTTON -->
+  <button
+    class="sound-button hidden"
+    id="soundButton"
+    aria-label="Mute or unmute video"
+  >
+    <span class="sound-bars">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+
+    <span id="soundText">Sound on</span>
+  </button>
+
+
+  <!-- PROGRESS -->
+  <div class="progress-line">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+
+  <main id="mainContent">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-background"></div>
+
+      <div class="hero-number">
+        <span>0</span>
+        <span>1</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow reveal">
+          ONE MONTH WITH YOU
+        </p>
+
+        <h2 class="hero-title">
+          <span class="line">
+            <span>Somehow,</span>
+          </span>
+
+          <span class="line">
+            <span>you became</span>
+          </span>
+
+          <span class="line italic">
+            <span>my favourite part</span>
+          </span>
+
+          <span class="line">
+            <span>of every day.</span>
+          </span>
+        </h2>
+      </div>
+
+      <div class="hero-bottom">
+        <p>
+          Nineteen photos.<br>
+          A million little moments.
+        </p>
+
+        <div class="scroll-hint">
+          <span>Scroll to remember</span>
+          <i></i>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- INTRO STATEMENT -->
+    <section class="statement-section">
+
+      <p class="section-index">01 / THE BEGINNING</p>
+
+      <h2 class="statement reveal-text">
+        People say one month is not a long time.
+        Maybe they are right.
+        But it was long enough for you to become
+        someone I never want to lose.
+      </h2>
+
+      <div class="statement-photo photo-reveal">
+        <img
+          src="6f2bdb30-d6e7-4f8e-9d98-b20672957b98.jpeg"
+          alt="A memory together"
+        >
+      </div>
+
+    </section>
+
+
+    <!-- FLOATING MEMORIES -->
+    <section class="floating-section">
+
+      <div class="floating-heading">
+        <p class="section-index">02 / LITTLE MOMENTS</p>
+
+        <h2>
+          It was never only<br>
+          about the big moments.
+        </h2>
+      </div>
+
+      <div class="floating-stage">
+
+        <figure class="float-card card-one" data-speed="0.08">
+          <img
+            src="9e336203-cec9-4b20-bd38-9d71b6a4949d.jpeg"
+            alt=""
+          >
+          <figcaption>Your smile.</figcaption>
+        </figure>
+
+        <figure class="float-card card-two" data-speed="-0.05">
+          <img
+            src="335e1d91-152c-49ba-b858-40747ca1e9ef.jpeg"
+            alt=""
+          >
+          <figcaption>The random moments.</figcaption>
+        </figure>
+
+        <figure class="float-card card-three" data-speed="0.11">
+          <img
+            src="628ffa11-17c4-4f5e-883b-800e2d7db04d.jpeg"
+            alt=""
+          >
+          <figcaption>The way you look at me.</figcaption>
+        </figure>
+
+        <figure class="float-card card-four" data-speed="-0.08">
+          <img
+            src="96801CC1-EBEF-4D47-8B0F-B9C3A27F1DDF.jpeg"
+            alt=""
+          >
+          <figcaption>Every little adventure.</figcaption>
+        </figure>
+
+        <div class="floating-center-text">
+          <p>
+            It was the laughs,<br>
+            the looks,<br>
+            the comfortable silence,<br>
+            and the moments<br>
+            no one else noticed.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FULL IMAGE -->
+    <section class="full-photo-section">
+
+      <div class="full-photo-wrap">
+        <img
+          src="8625182f-9daf-45e0-ba51-a43df2565ffa (1).jpeg"
+          alt=""
+        >
+
+        <div class="full-photo-overlay"></div>
+
+        <div class="full-photo-copy">
+          <p>Some places feel beautiful.</p>
+          <h2>
+            You make them<br>
+            unforgettable.
+          </h2>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- WORDS -->
+    <section class="words-section">
+
+      <p class="section-index">03 / WHAT YOU ARE TO ME</p>
+
+      <div class="word-list">
+
+        <div class="word-row">
+          <span class="word-number">01</span>
+          <h2>Beautiful.</h2>
+          <img src="92444126-48bb-466c-8efa-a7cddb5aea5e (1).jpeg" alt="">
+        </div>
+
+        <div class="word-row">
+          <span class="word-number">02</span>
+          <h2>Funny.</h2>
+          <img src="e2b60f17-5f80-4e9d-ba20-6ba7711f3b67.jpeg" alt="">
+        </div>
+
+        <div class="word-row">
+          <span class="word-number">03</span>
+          <h2>Unexpected.</h2>
+          <img src="eafe4c88-db2b-4358-84df-e1c235f13f7b.jpeg" alt="">
+        </div>
+
+        <div class="word-row">
+          <span class="word-number">04</span>
+          <h2>My favourite.</h2>
+          <img src="f0b35e7c-7879-4dcb-819d-67fdb34f9d5a.jpeg" alt="">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HORIZONTAL GALLERY -->
+    <section class="horizontal-section">
+
+      <div class="horizontal-top">
+        <p class="section-index">04 / OUR KIND OF CHAOS</p>
+
+        <h2>
+          My princess<br>
+          to be completely weird with.
+        </h2>
+      </div>
+
+      <div class="horizontal-track">
+
+        <article class="horizontal-card tall-card">
+          <img
+            src="F5851BBC-1097-4DA2-A729-063B29EC89F4.jpeg"
+            alt=""
+          >
+          <p>Not always serious.</p>
+        </article>
+
+        <article class="horizontal-card wide-card">
+          <img src="IMG_2090.jpeg" alt="">
+          <p>Never boring.</p>
+        </article>
+
+        <article class="horizontal-card medium-card">
+          <img src="IMG_2155.jpeg" alt="">
+          <p>Always us.</p>
+        </article>
+
+        <article class="horizontal-card tall-card">
+          <img src="IMG_2227.jpeg" alt="">
+          <p>My favourite chaos.</p>
+        </article>
+
+        <article class="horizontal-card wide-card">
+          <img src="IMG_2334.jpeg" alt="">
+          <p>And I would not change it.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- HOME -->
+    <section class="home-section">
+
+      <img src="IMG_2257.jpeg" alt="">
+
+      <div class="home-overlay"></div>
+
+      <div class="home-copy">
+        <p>One word.</p>
+        <h2>Home.</h2>
+      </div>
+
+    </section>
+
+
+    <!-- SPLIT -->
+    <section class="split-section">
+
+      <div class="split-copy">
+        <p class="section-index">05 / BOTH SIDES OF US</p>
+
+        <h2>
+          The beautiful moments.<br>
+          The ridiculous ones.<br>
+          I love all of them.
+        </h2>
+
+        <p class="split-description">
+          Because my favourite memories are not perfect.
+          They are simply the ones that have you in them.
+        </p>
+      </div>
+
+      <div class="split-gallery">
+
+        <div class="split-image split-image-one">
+          <img src="IMG_2284.jpeg" alt="">
+        </div>
+
+        <div class="split-image split-image-two">
+          <img src="IMG_2295.jpeg" alt="">
+        </div>
+
+        <div class="split-image split-image-three">
+          <img src="IMG_2330.jpeg" alt="">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INTERACTIVE HEART -->
+    <section class="heart-section">
+
+      <div class="heart-content">
+
+        <p class="section-index light">
+          06 / A SMALL REMINDER
+        </p>
+
+        <h2>
+          There are things<br>
+          I do not say enough.
+        </h2>
+
+        <button class="heart-button" id="heartButton">
+          <span class="heart-shape">♥</span>
+          <span class="heart-label">Hold me</span>
+        </button>
+
+        <p class="heart-instruction">
+          Press and hold the heart
+        </p>
+
+      </div>
+
+      <div class="heart-message" id="heartMessage">
+        <span>I love your smile.</span>
+        <span>I love your eyes.</span>
+        <span>I love your hugs.</span>
+        <span>I love laughing with you.</span>
+        <span>I love how easy it feels.</span>
+        <span>I love you.</span>
+      </div>
+
+    </section>
+
+
+    <!-- CINEMATIC QUOTE -->
+    <section class="cinematic-section">
+
+      <div class="cinematic-image">
+        <img
+          src="IMG_2284.jpeg"
+          alt=""
+        >
+      </div>
+
+      <div class="cinematic-overlay"></div>
+
+      <div class="cinematic-copy">
+
+        <p class="cinematic-line">
+          It has only been one month.
+        </p>
+
+        <p class="cinematic-line">
+          But somehow,
+        </p>
+
+        <p class="cinematic-line big">
+          you already feel<br>
+          like something worth keeping.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- COLLAGE -->
+    <section class="collage-section">
+
+      <div class="collage-title">
+        <p class="section-index">07 / EVERYTHING SO FAR</p>
+
+        <h2>
+          One month.<br>
+          Some memories.<br>
+          And so much more to come.
+        </h2>
+      </div>
+
+      <div class="collage">
+
+        <img
+          class="collage-image c1"
+          src="6f2bdb30-d6e7-4f8e-9d98-b20672957b98.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c2"
+          src="335e1d91-152c-49ba-b858-40747ca1e9ef.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c3"
+          src="628ffa11-17c4-4f5e-883b-800e2d7db04d.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c4"
+          src="e2b60f17-5f80-4e9d-ba20-6ba7711f3b67.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c5"
+          src="IMG_2090.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c6"
+          src="IMG_2155.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c7"
+          src="IMG_2227.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c8"
+          src="IMG_2295.jpeg"
+          alt=""
+        >
+
+        <img
+          class="collage-image c9"
+          src="IMG_2334.jpeg"
+          alt=""
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final-section">
+
+      <div class="final-video-background">
+        <video
+          src="video.mp4"
+          muted
+          autoplay
+          loop
+          playsinline
+        ></video>
+      </div>
+
+      <div class="final-overlay"></div>
+
+      <div class="final-content">
+
+        <p class="section-index light">
+          08 / JUST THE BEGINNING
+        </p>
+
+        <p class="final-intro">
+          Thank you for every laugh,<br>
+          every hug, every kiss,<br>
+          and every small moment.
+        </p>
+
+        <h2>
+          One month down.
+          <span>
+           I love you
+          </span>
+        </h2>
+
+        <p class="final-signature">
+          Happy one month, my love.
+        </p>
+
+        <button class="replay-button" id="replayButton">
+          <span>Replay our month</span>
+          <span>↻</span>
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
